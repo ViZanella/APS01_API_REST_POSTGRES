@@ -1,0 +1,56 @@
+/* Estilizando o elemento <header> */
+header{
+    display: flex; /* Define o layout como flexível, permitindo alinhamento de elementos filhos */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    width: 100%; /* O header ocupa 100% da largura disponível */
+    background-color: #1976d2; /* Define a cor de fundo como azul (#1976d2) */
+    color: #fff; /* Define a cor do texto dentro do header como branco */
+
+}
+/* Estilizando um contêiner genérico */
+.container{
+    width: 100%; /* O contêiner ocupa toda a largura disponível */
+    padding-left: 1.5rem; /* Adiciona espaçamento (padding) à esquerda */
+    padding-right: 1.5rem; /* Adiciona espaçamento (padding) à direita */
+}
+/* Estilo responsivo para telas grandes */
+@media(min-width: 1200px){
+        .container{
+        max-width: 1200px;/* Em telas maiores que 1200px, a largura máxima do contêiner é de 1200px */
+    }
+    
+}
+/* Estilizando um elemento com a classe "toobar" dentro do <header> */
+header.toobar{
+    display:flex; /* Define o layout flexível para o elemento "toobar" */
+    align-items: center; /* Alinha os elementos no eixo vertical (centraliza) */
+}
+/* Estilizando o título <h6> dentro do elemento "toobar" */
+header.toobar h6{
+    margin: 0; /* Remove o espaçamento padrão em torno do título */
+    font-weight: 500; /* Define o peso da fonte (moderadamente negrito) */
+    font-size: 1.25rem; /* Tamanho da fonte do título */
+    line-height: 1.6rem; /* Altura da linha para melhorar a legibilidade */
+    letter-spacing: 0.0075rem; /* Pequeno espaçamento entre letras */
+}
+/* Estilizando a lista de navegação (<ul>) dentro do "toobar" */
+header.toobar ul{
+    display: flex;  /* Organiza os itens da lista em uma linha (horizontalmente) */
+    list-style: none; /* Remove as bolinhas ou marcadores padrão da lista */
+    padding-left: 2rem; /* Adiciona espaçamento à esquerda da lista */
+}
+/* Estilizando os itens de lista (<li>) dentro da "toolbar" */
+header.toolbar li{
+    padding: 0.3rem 0.05rem ; /* Espaçamento interno nos itens da lista para aumentar a área clicável */
+}
+/* Estilizando os links (<a>) dentro da "toobar" */
+header.toobar a{
+    color: #fff; /* Define a cor do texto do link como branco */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: 400; /* Define o peso da fonte dos links */
+    text-transform: uppercase; /* Transforma o texto dos links para letras maiúsculas */
+}
+/* Estilo para o link ativo dentro do <header> */
+header a.active{
+    color: rgba(rgb(0, 0, 0, 0.3)); /* Define a cor do link ativo como uma cor preta semitransparente */
+}
